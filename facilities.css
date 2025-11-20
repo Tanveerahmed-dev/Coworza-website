@@ -1,0 +1,434 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    color: #ff7a00;
+}
+
+.login-btn {
+    background: #ff7a00;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.facilities-hero {
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+    background: #e0f7fa,
+}
+
+.facilities-hero h1 {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.facilities-hero p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+/* Facilities Grid */
+/* card 1 */
+:root {
+    --primary-color: #ff5757; /* The reddish color for the tag/checks */
+    --light-bg: #f7f7f7; /* Background for the included items */
+    --text-color: #333;
+    --card-bg: #fff;
+    --border-radius: 12px;
+}
+
+/* Base Card Styling */
+.security-card {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* Content Column Styling */
+.content-column {
+    flex: 1; /* Takes up one part of the space */
+    padding: 60px;
+}
+
+/* Tag (Safety & Security) Styling */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+    background-color: #ffe0e0; /* Lighter background for the tag */
+    color: var(--primary-color);
+    border-radius: 9999px; /* Pill shape */
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.tag svg {
+    margin-right: 6px;
+    color: var(--primary-color);
+}
+
+/* Typography */
+.content-column h2 {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    color: #000;
+}
+
+.content-column p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.included-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 15px 0;
+}
+
+/* Included Items Grid */
+.included-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.item svg {
+    margin-right: 10px;
+    color: var(--primary-color);
+    /* For the checkmark inside the item */
+    background-color: #fff; 
+    border-radius: 50%;
+}
+
+/* Image Column Styling */
+.image-column {
+    flex: 1; /* Takes up one part of the space */
+    /* Clip the image at the rounded corner of the card */
+    overflow: hidden; 
+}
+
+.image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .security-card {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .content-column {
+        padding: 40px 20px;
+    }
+
+    .image-column {
+        height: 300px; /* Give the image a fixed height on smaller screens */
+    }
+
+    .included-items {
+        grid-template-columns: 1fr; /* Single column for items */
+    }
+
+    .content-column h2 {
+        font-size: 2.5em;
+    }
+}
+
+/* card 2 */
+:root {
+    --primary-color: #ff5757; /* The reddish color for the tag/checks */
+    --light-bg: #f7f7f7; /* Background for the included items */
+    --text-color: #333;
+    --card-bg: #fff;
+    --border-radius: 12px;
+}
+
+/* Base Card Styling */
+.Climate-control-card{ 
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* Content Column Styling */
+.content-column {
+    flex: 1; /* Takes up one part of the space */
+    padding: 60px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+    background-color: #ffe0e0; /* Lighter background for the tag */
+    color: var(--primary-color);
+    border-radius: 9999px; /* Pill shape */
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.tag svg {
+    margin-right: 6px;
+    color: var(--primary-color);
+}
+
+/* Typography */
+.content-column h2 {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    color: #000;
+}
+
+.content-column p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.included-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 15px 0;
+}
+
+/* Included Items Grid */
+.included-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.item svg {
+    margin-right: 10px;
+    color: var(--primary-color);
+    /* For the checkmark inside the item */
+    background-color: #fff; 
+    border-radius: 50%;
+}
+
+/* Image Column Styling */
+.image-column {
+    flex: 1; /* Takes up one part of the space */
+    /* Clip the image at the rounded corner of the card */
+    overflow: hidden; 
+}
+
+.image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .security-card {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .content-column {
+        padding: 40px 20px;
+    }
+
+    .image-column {
+        height: 300px; /* Give the image a fixed height on smaller screens */
+    }
+
+    .included-items {
+        grid-template-columns: 1fr; /* Single column for items */
+    }
+
+    .content-column h2 {
+        font-size: 2.5em;
+    }
+}
+
+/* Footer */
+.footer {
+  background-color: #eaf3f3;
+  padding: 60px 80px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.logo {
+  font-size: 11px;
+  font-weight: bold;
+  transform: translateX(-15px);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-about {
+  flex: 1.2;
+  min-width: 250px;
+}
+
+.footer-about p {
+  margin: 15px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info i {
+  color: #ff7e35;
+}
+
+.footer-links {
+  flex: 0.8;
+  min-width: 200px;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #777;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ff7e35;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #000;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff7e35;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid #bbb;
+  margin-bottom: 15px;
+}
+
+.footer-bottom p {
+  color: #777;
+  font-size: 14px;
+}
+
+.flexed {
+  display: flex;
+}
